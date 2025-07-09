@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Blog - Shaheeth Hussain</title>
+</head>
+<body>
+
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Intro.html">My Intro</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="blogContainer">
+        <h1>Blogs by Shaheeth</h1>
+        <div class="blogGrid">
+          <div class="blogCard">
+            <h3>Learn JavaScript in a Fun Way</h3>
+            <p>Discover core concepts of JS through practical examples and interactive demos.</p>
+            <button class="readMoreBtn">Read More</button>
+          </div>
+          <div class="blogCard">
+            <h3>Mastering Async Programming</h3>
+            <p>Understand callbacks, promises, and async/await with real-world applications.</p>
+            <button class="readMoreBtn">Read More</button>
+          </div>
+          <div class="blogCard">
+            <h3>Responsive UIs with Flexbox</h3>
+            <p>Build fluid, adaptable layouts using modern Flexbox techniques.</p>
+            <button class="readMoreBtn">Read More</button>
+          </div>
+          <div class="blogCard">
+            <h3>Deploy Your First Web App</h3>
+            <p>Step-by-step guide to launch your project using GitHub, Netlify, or Firebase.</p>
+            <button class="readMoreBtn">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

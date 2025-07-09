@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>About Me - Shaheeth Hussain</title>
+</head>
+<body>
+
+  <!-- Toggle Button -->
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Intro.html">My Intro</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="introContainer">
+        <h1>About Me</h1>
+        <div class="introContent">
+          <div class="introText">
+            <p>Hello! I’m <strong>Shaheeth Hussain</strong>, a passionate and performance-driven web developer.</p>
+            <p>I specialize in creating efficient, responsive, and scalable web and mobile applications. I enjoy building sleek user interfaces, working with APIs, and deploying full-stack projects.</p>
+            <p>When I’m not coding, you’ll find me exploring tech communities, contributing to open-source, and helping other developers grow.</p>
+          </div>
+          <div class="introImage">
+            <img src="PikPng.com_human-silhouette-png_1186539.png" alt="Profile of Shaheeth">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

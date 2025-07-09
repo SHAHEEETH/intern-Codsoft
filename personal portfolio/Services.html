@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Services - Shaheeth Hussain</title>
+</head>
+<body>
+
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Intro.html">My Intro</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="servicesContainer">
+        <h1>Services I Offer</h1>
+        <div class="servicesGrid">
+          <div class="serviceCard">
+            <h3>🌐 Web Development</h3>
+            <p>Responsive websites using HTML, CSS, JavaScript, React, and Vue.</p>
+          </div>
+          <div class="serviceCard">
+            <h3>📱 App Development</h3>
+            <p>Modern Android/iOS apps using Flutter, Kotlin, or Swift.</p>
+          </div>
+          <div class="serviceCard">
+            <h3>🎨 UI/UX Design</h3>
+            <p>Stunning designs with Figma, Adobe XD, and modern CSS animations.</p>
+          </div>
+          <div class="serviceCard">
+            <h3>🛠 Backend Integration</h3>
+            <p>Node.js, Express, MongoDB, and Firebase for scalable backends.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

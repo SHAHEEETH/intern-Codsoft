@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Shaheeth Hussain - Web Developer</title>
+</head>
+<body>
+
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Intro.html">My Intro</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="infoContainer">
+        <div class="devInfo">
+          <h2>Hello, I'm</h2>
+          <h1 class="name">Shaheeth Hussain</h1>
+          <h3 class="about">Web Developer & entrepreneur</h3>
+          <div class="buttons">
+            <a href="/cv.txt" download><button>Download CV</button></a>
+            <a href="contact.html"><button>Contact Me</button></a>
+          </div>
+        </div>
+        <div class="devPic">
+          <img src="PikPng.com_human-silhouette-png_1186539.png" alt="Shaheeth Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
